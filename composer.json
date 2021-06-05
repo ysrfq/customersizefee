@@ -1,0 +1,29 @@
+{
+  "name": "lovevox/module-customersizefee",
+  "description": "Customized size function",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "Rong Faqiang",
+      "email": "344251875@qq.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "~7.3.0||~7.4.0"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Lovevox\\CustomerSizeFee\\": ""
+    }
+  }
+}
+

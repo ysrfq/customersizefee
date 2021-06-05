@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="sales_invoice_view">
+                <referenceBlock name="form">
+                    <referenceBlock name="invoice_items">
+                        <referenceBlock name="column_name" template="Lovevox_CustomerSizeFee::items/column/name.phtml"/>
+                    </referenceBlock>
+                    <referenceBlock class="Lovevox\CustomerSizeFee\Block\Adminhtml\Order\Invoice\Totals"
+                                    name="invoice_totals"/>
+                </referenceBlock>
+            </referenceBlock>
+        </referenceContainer>
+    </body>
+</page>
